@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testimonials | Designphere</title>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Remix Icon CDN (for hamburger icon) -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navbar placeholder -->
+  <div id="navbar"></div>
+
+  <!-- Testimonials Section -->
+  <section class="section testimonials-section" id="testimonials" style="padding-top: 6rem;">
+    <div class="section_title">
+      <span class="span">Testimonials</span>
+      <h2>What Clients Say</h2>
+      <p>
+        Hear directly from the people I've worked with—experiences, feedback, and success stories.
+      </p>
+    </div>
+
+    <div class="testimonials_grid">
+      <!-- Testimonial Card -->
+      <div class="testimonial_card">
+        <img src="image/testinonial1.jpg" alt="Client 1" />
+        <h4>Amos Akom</h4>
+        <p class="client_position">CEO, BrightIdeas</p>
+        <p class="testimonial_text">
+          "Guidance delivered our web application ahead of schedule. His attention to detail and communication throughout the project was outstanding."
+        </p>
+      </div>
+
+      <div class="testimonial_card">
+        <img src="image/testinonial2.jpg" alt="Client 2" />
+        <h4>Liberty Obun</h4>
+        <p class="client_position">Founder, FitLife</p>
+        <p class="testimonial_text">
+          "Working with Guidance was seamless. The final product exceeded our expectations in both design and functionality."
+        </p>
+      </div>
+
+      <div class="testimonial_card">
+        <img src="image/testinonial3.jpg" alt="Client 3" />
+        <h4>Confidence Ojua</h4>
+        <p class="client_position">Marketing Director, Luxoria</p>
+        <p class="testimonial_text">
+          "Professional, creative, and efficient. Guidance brought our ideas to life and provided invaluable technical expertise."
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Load navbar dynamically -->
+  <script>
+    fetch("navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+  <!-- Main JS -->
+  <script src="script.js"></script>
+</body>
+</html>

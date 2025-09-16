@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Designphere</title>
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Remix Icon CDN (for hamburger icon) -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navbar placeholder -->
+  <div id="navbar"></div>
+
+  <!-- About Section -->
+  <section class="section about-section" id="about">
+    <div class="section_image">
+      <img src="image/hero.jpg" alt="About Me" />
+    </div>
+
+    <div class="section_title">
+      <span class="span">About Me</span>
+      <h2>Who I Am</h2>
+      <p>
+        I'm <span style="color: var(--primary-color); font-weight: 600;">Guidance Ogar</span>, 
+        a passionate <span style="color: var(--primary-color); font-weight: 600;">MERN Full-Stack Developer</span>.  
+        I specialize in building modern, scalable, and user-friendly applications 
+        using the latest web technologies.
+      </p>
+      <p>
+        With experience in <strong>MongoDB, Express, React, and Node.js</strong>, 
+        I deliver projects that balance speed, security, and performance.  
+        I aim to create products that not only work well but also look great.
+      </p>
+      <div class="hero_btn">
+        <button class="btn"><a href="portfolio.html">View My Work</a></button>
+        <button class="btn"><a href="contact.html">Hire Me</a></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Load navbar dynamically -->
+  <script>
+    fetch("navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+  <!-- Main JS -->
+  <script src="script.js"></script>
+</body>
+</html>
