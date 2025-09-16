@@ -793,7 +793,7 @@ Portfolio  */
   }
 }
 
-
+/* Hero adjustments for tablets */
 @media screen and (max-width: 768px) {
   .hero_title h1 {
     font-size: 3rem;
@@ -805,6 +805,8 @@ Portfolio  */
     font-size: 0.9rem;
   }
 }
+
+/* Hero adjustments for small mobiles */
 @media screen and (max-width: 500px) {
   .hero_title {
     padding-top: 20%;
@@ -825,3 +827,40 @@ Portfolio  */
     height: 45px;
   }
 }
+
+/* --- NAVBAR MOBILE FIX --- */
+@media screen and (max-width: 900px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5%;
+  }
+
+  .logo {
+    width: auto;
+  }
+  .logo a {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+
+  #toggle {
+    font-size: 1.6rem;
+    padding: 8px 12px;
+  }
+
+  .nav_btn {
+    width: auto;
+    height: 40px;
+  }
+  .nav_btn a {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+
+  /* Ensure logo, hamburger, and button have spacing */
+  .navbar > * {
+    margin-right: 10px;
+  }
+}
+
